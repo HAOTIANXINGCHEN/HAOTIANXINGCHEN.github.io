@@ -18,21 +18,19 @@
   
   
   <title>我自己的第一篇博客 | 星辰大海</title>
-  <meta name="description" content="这是我用hexo框架搭建的第一篇自己的博客">
+  <meta name="description" content="1.1. 描述Servlet调用过程？ （1）在浏览器输入地址，浏览器先去查找hosts文件，将主机名翻译为ip地址，如果找不到就再去查询dns服务器将主机名翻译成ip地址。（2）浏览器根据ip地址和端口号访问服务器，组织http请求信息发送给服务器。（3）服务器收到请求后首先根据Host请求头判断当前访问的是哪台虚拟主机。（4）服务器根据http请求头中的请求URI判断当前访问的是哪个web应用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我自己的第一篇博客">
 <meta property="og:url" content="http://example.com/2021/01/17/%E6%88%91%E8%87%AA%E5%B7%B1%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="星辰大海">
-<meta property="og:description" content="这是我用hexo框架搭建的第一篇自己的博客">
+<meta property="og:description" content="1.1. 描述Servlet调用过程？ （1）在浏览器输入地址，浏览器先去查找hosts文件，将主机名翻译为ip地址，如果找不到就再去查询dns服务器将主机名翻译成ip地址。（2）浏览器根据ip地址和端口号访问服务器，组织http请求信息发送给服务器。（3）服务器收到请求后首先根据Host请求头判断当前访问的是哪台虚拟主机。（4）服务器根据http请求头中的请求URI判断当前访问的是哪个web应用">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-01-17T02:39:20.000Z">
-<meta property="article:modified_time" content="2021-01-17T04:34:01.613Z">
+<meta property="article:modified_time" content="2021-01-17T09:25:10.510Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
   <link rel="canonical" href="http://example.com/2021/01/17/%E6%88%91%E8%87%AA%E5%B7%B1%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">
-  
-    <link rel="alternate" href="/atom.xml" title="星辰大海" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png" type="image/x-icon">
@@ -44,7 +42,8 @@
   
   
   
-<meta name="generator" content="Hexo 5.3.0"></head>
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="星辰大海" type="application/atom+xml">
+</head>
 
 
 <body class="main-center" itemscope itemtype="http://schema.org/WebPage">
@@ -58,7 +57,7 @@
           <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
         </a>
         <h2 id="name" class="hidden-xs hidden-sm">星辰</h2>
-        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Designer</h3>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">不断学习的小菜鸡</h3>
         <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shanghai, China</small>
       </div>
       
@@ -296,7 +295,16 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>这是我用hexo框架搭建的第一篇自己的博客</p>
+        <h2 id="1-1-描述Servlet调用过程？"><a href="#1-1-描述Servlet调用过程？" class="headerlink" title="1.1. 描述Servlet调用过程？"></a>1.1. 描述Servlet调用过程？</h2><p> （1）在浏览器输入地址，浏览器先去查找hosts文件，将主机名翻译为ip地址，如果找不到就再去查询dns服务器将主机名翻译成ip地址。<br>（2）浏览器根据ip地址和端口号访问服务器，组织http请求信息发送给服务器。<br>（3）服务器收到请求后首先根据Host请求头判断当前访问的是哪台虚拟主机。<br>（4）服务器根据http请求头中的请求URI判断当前访问的是哪个web应用。<br>（5）服务器根据http请求头中的请求URI判断当前访问的是web应用中的哪个web资源。<br>（6）检查web应用的web.xml文件，如果根据路径找到具体的servlet处理类的全路径名交给该servlet处理,如果找不到就交给缺省servlet处理。<br>（7）这个过程中浏览器只知道自己发出来http请求，不久就收到了http响应，浏览器不知道也不关心服务器内部是如何处理的。浏览器和服务器之间的关系是非常单纯的，只有HTTP协议。<br>（8）解析请求、封装RequestResponse对象、创建Servlet、调用Service方法都是服务器自动进行的，开发人员只需要写好Servlet配置进容器中即可，无需操心具体的底层实现。 </p>
+<h2 id="1-2-简述Servlet生命周期？"><a href="#1-2-简述Servlet生命周期？" class="headerlink" title="1.2. 简述Servlet生命周期？"></a>1.2. 简述Servlet生命周期？</h2><p>1.Servlet第一次被访问到时创建对象，创建出来后立即执行init方法执行初始化的操作。<br>2.从此以后该对象一直驻留在内存中为后续的对这个Servlet的请求进行服务。<br>3.直到服务器关闭或web应用移除出容器时，随着web应用的销毁Servlet对象销毁掉，在销毁之前调用destory方法执行善后工作。<br>4.在存活期间，每次对Servlet 的调用都会导致Service方法的执行。 </p>
+<h2 id="1-3-什么是http协议？"><a href="#1-3-什么是http协议？" class="headerlink" title="1.3. 什么是http协议？"></a>1.3. 什么是http协议？</h2><p> HTTP协议就是一套基于tcp/ip协议的应用层协议 。简单来说，就是一个基于应用层的通信规范，双方要进行通信，大家都要遵守一个规范，这个规范就是HTTP协议。它规定了客户端（通常是浏览器）和服务器之间的通信方式。 </p>
+<h2 id="1-4-HTTP协议工作原理？"><a href="#1-4-HTTP协议工作原理？" class="headerlink" title="1.4. HTTP协议工作原理？"></a>1.4. HTTP协议工作原理？</h2><p> HTTP协议基于请求响应模型。<br>一次请求对应一次响应。<br>首先客户端发送一个请求(request)给服务器，服务器在接收到这个请求后将生成一个响应(response)返回给客户端。 </p>
+<h2 id="1-5-HTTP协议的特点是什么"><a href="#1-5-HTTP协议的特点是什么" class="headerlink" title="1.5. HTTP协议的特点是什么 ?"></a>1.5. HTTP协议的特点是什么 ?</h2><p> （1） 它是一个无状态的协议，服务器端在处理相应请求后不会保留任何客户端的信息，每次请求都是独立的<br>（2） 客户端与服务器端的每一次数据交互，都要经过一次请求/响应的过程。<br>（3） 服务器端无法识别能够出发客户端请求的方法。<br>（4） 一个典型的HTTP请求分为 一个请求行 若干请求头 一个空行 实体内容 </p>
+<h2 id="1-6-get和post请求的区别？"><a href="#1-6-get和post请求的区别？" class="headerlink" title="1.6. get和post请求的区别？"></a>1.6. get和post请求的区别？</h2><p> 1） get请求用来从服务器上获得资源，而post是用来向服务器提交数据；<br>（2） get将表单中数据按照name=value的形式，添加到action 所指向的URL 后面，并且两者使用”?“连接，而各个变量之间使用”&amp;“连接；post是将表单中的数据放在HTTP协议的请求头或消息体中，传递到action所指向URL；<br>（3） get传输的数据要受到URL长度限制（1024字节）；而post可以传输大量的数据， POST数据是没有限制的，上传文件通常要使用post方式；<br>（4） 使用get时参数会显示在地址栏上，如果这些数据不是敏感数据，那么可以使用get；对于敏感数据还是应用使用post；<br>（5） get使用MIME类型application/x-www-form-urlencoded的URL编码（也叫百分号编码）文本的格式传递参数，保证被传送的参数由遵循规范的文本组成，例如一个空格的编码是”%20”。<br>（6） Jsp页面中的FORM标签里的method属性为get时调用doGet()，为post时调用doPost()。 </p>
+<h2 id="1-7-请求乱码产生的原因？"><a href="#1-7-请求乱码产生的原因？" class="headerlink" title="1.7. 请求乱码产生的原因？"></a>1.7. 请求乱码产生的原因？</h2><p> 浏览器用什么码表来打开表单页面就用什么编码来发送数据。当前我们的注册页面指定了用utf-8来打开。<br>这就决定了浏览器是用utf-8打开的页面，浏览器在提交表单时是用utf-8编码的。<br>而tomcat默认情况下会使用iso8859-1来进行解码。<br>我们知道全世界的码表都兼容iso8859-1，所以英文处理是没有问题的。<br>但是iso8859-1中并没有中文，iso8859-1对于无法处理的字节都使用?替代，所以我们看到的都是？ </p>
+<h2 id="1-8-如何来处理get请求产生的乱码"><a href="#1-8-如何来处理get请求产生的乱码" class="headerlink" title="1.8. 如何来处理get请求产生的乱码?"></a>1.8. 如何来处理get请求产生的乱码?</h2><p> 由于客户端发送时使用的是utf-8编码而服务器用iso8859-1解码造成了乱码，虽然字符已经乱掉了，但底层的字节仍然是正确的，我们只要将乱码字符getBytes(“iso8859-1”)转换为字节，就是正确的字节，再将这些字节new String(bytes，“utf-8”)按照正确的码表编码，就可以转换回正确的字符了。从而解决了乱码。 </p>
+<h2 id="1-9-Request生命周期"><a href="#1-9-Request生命周期" class="headerlink" title="1.9. Request生命周期"></a>1.9. Request生命周期</h2><p> request对象的生命周期是针对一个客户端(一个浏览器应用程序)的一次请求，当请求完毕之后，request里边的内容也将被释放，一个请求开始时创建，请求结束后销毁。 </p>
+<h2 id="1-10-如何处理响应乱码？"><a href="#1-10-如何处理响应乱码？" class="headerlink" title="1.10. 如何处理响应乱码？"></a>1.10. 如何处理响应乱码？</h2><p> 通过response.setHeader(“Content-Type”, “text/html;charset=utf-8”)方法，通知服务器发送数据时的码表；通过response.setCharacterEncoding(“utf-8”)方法，通知浏览器解析时使用的码表。两码相同就不会有乱码了。<br>response提供了setContentType(“text/html;charset=UTF-8”)快捷方法，在它的底层，会同时做上面两件事，所以可以一行代码解决response产生的乱码问题。 </p>
 
       
     </div>
@@ -325,7 +333,7 @@
         </a>
       </div>
       <div class="media-body">
-        <h3 class="media-heading"><a href="https://github.com/HAOTIANXINGCHEN" target="_blank"><span class="text-dark">星辰</span><small class="ml-1x">Web Developer &amp; Designer</small></a></h3>
+        <h3 class="media-heading"><a href="https://github.com/HAOTIANXINGCHEN" target="_blank"><span class="text-dark">星辰</span><small class="ml-1x">不断学习的小菜鸡</small></a></h3>
         <div>个人简介。</div>
       </div>
     </figure>
