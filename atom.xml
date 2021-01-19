@@ -176,12 +176,12 @@
     <link href="http://example.com/2020/01/19/test1/"/>
     <id>http://example.com/2020/01/19/test1/</id>
     <published>2020-01-19T07:32:16.000Z</published>
-    <updated>2021-01-19T07:39:41.951Z</updated>
+    <updated>2021-01-19T07:42:27.146Z</updated>
     
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="6c6bd0aeb779bed81283ceb18e3ae9302c26d6730a793f71265cd1a4edf15809">1b693c4938223286468132b2f7068bf6dfee07f365da88e0f20fb98ce9ee8b53eacf9c8b7e180134157c0fb80f71f4068462f643dd809a260e31642fe35a1817837a264e81f1869ec7a04d46c17d6492</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="a5777679961f6cdc0d668c0a2250afa5ff2cc8286b3c0eeb4c584b5aa94516d3">bd25ed9264b080267271e137e33d0ce194559fe8cc00dad701d48bfcbf4582873282a2c6cd248af7e8a31c3851bf27e092f75c374ac9512b0a1842d830f603892a984ae352433e016e2ea3b9db427bfe</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，这里需要密码。</span>      </label>    </div>  </div></div><script src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
     
     
-    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    <summary type="html">这里有东西被加密了，需要输入密码查看哦。</summary>
     
     
     
