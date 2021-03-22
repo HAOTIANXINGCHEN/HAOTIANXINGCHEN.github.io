@@ -2,7 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2020/01/02/%E5%B8%8C%E6%9C%9B%E6%98%AF%E7%81%AB%EF%BC%8C%E5%A4%B1%E6%9C%9B%E6%98%AF%E7%83%9F%EF%BC%8C%E7%94%9F%E6%B4%BB%E5%B0%B1%E6%98%AF%E4%B8%80%E8%BE%B9%E7%82%B9%E7%81%AB%EF%BC%8C%E4%B8%80%E8%BE%B9%E5%86%92%E7%83%9F%E3%80%82-%E7%A5%9E%E7%A7%98%E7%AF%87/</loc>
+    <loc>http://example.com/2020/01/01/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%93/</loc>
+    
+    <lastmod>2021-03-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2018/05/12/%E5%AD%A6%E4%B9%A0html%E7%9A%84%E7%AC%94%E8%AE%B0/</loc>
+    
+    <lastmod>2021-03-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2018/01/02/%E5%B8%8C%E6%9C%9B%E6%98%AF%E7%81%AB%EF%BC%8C%E5%A4%B1%E6%9C%9B%E6%98%AF%E7%83%9F%EF%BC%8C%E7%94%9F%E6%B4%BB%E5%B0%B1%E6%98%AF%E4%B8%80%E8%BE%B9%E7%82%B9%E7%81%AB%EF%BC%8C%E4%B8%80%E8%BE%B9%E5%86%92%E7%83%9F%E3%80%82-%E7%A5%9E%E7%A7%98%E7%AF%87/</loc>
+    
+    <lastmod>2021-03-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/index.html</loc>
     
     <lastmod>2021-01-19</lastmod>
     
@@ -60,7 +81,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2021-01-19</lastmod>
+    <lastmod>2021-03-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -68,81 +89,88 @@
   
   <url>
     <loc>http://example.com/tags/MQ/</loc>
-    <lastmod>2021-01-19</lastmod>
+    <lastmod>2021-03-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/SpringBoot/</loc>
-    <lastmod>2021-01-19</lastmod>
+    <lastmod>2021-03-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/MySql/</loc>
-    <lastmod>2021-01-19</lastmod>
+    <lastmod>2021-03-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E7%B4%A2%E5%BC%95/</loc>
-    <lastmod>2021-01-19</lastmod>
+    <lastmod>2021-03-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E8%89%BA%E6%9C%AF%E5%AE%B6/</loc>
-    <lastmod>2021-01-19</lastmod>
+    <lastmod>2021-03-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/java%E5%90%8E%E7%AB%AF/</loc>
-    <lastmod>2021-01-19</lastmod>
+    <lastmod>2021-03-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/test/</loc>
-    <lastmod>2021-01-19</lastmod>
+    <lastmod>2021-03-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E6%9C%AC%E5%9C%B0/</loc>
-    <lastmod>2021-01-19</lastmod>
+    <lastmod>2021-03-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E5%9B%BE%E7%89%87/</loc>
-    <lastmod>2021-01-19</lastmod>
+    <lastmod>2021-03-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Redis/</loc>
-    <lastmod>2021-01-19</lastmod>
+    <lastmod>2021-03-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/SpringCloud/</loc>
-    <lastmod>2021-01-19</lastmod>
+    <lastmod>2021-03-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
 
+  
+  <url>
+    <loc>http://example.com/categories/%E8%89%BA%E6%9C%AF/</loc>
+    <lastmod>2021-03-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
