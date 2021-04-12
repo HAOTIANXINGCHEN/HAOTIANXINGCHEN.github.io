@@ -6,7 +6,7 @@
   <link href="http://www.xc234.ltd/atom.xml" rel="self"/>
   
   <link href="http://www.xc234.ltd/"/>
-  <updated>2021-01-18T10:55:49.869Z</updated>
+  <updated>2021-04-12T11:56:07.356Z</updated>
   <id>http://www.xc234.ltd/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>something</title>
+    <link href="http://www.xc234.ltd/2021/04/12/something/"/>
+    <id>http://www.xc234.ltd/2021/04/12/something/</id>
+    <published>2021-04-12T11:52:45.000Z</published>
+    <updated>2021-04-12T11:56:07.356Z</updated>
+    
+    <content type="html"><![CDATA[<p>世界那么大，<br>会不会有另外一个我，<br>过着自己喜欢的生活。</p><p><img src="/2021/04/12/something/1.jpg" alt="1"></p><p><img src="/2021/04/12/something/2.jpg" alt="2"></p><p><img src="/2021/04/12/something/3.jpg" alt="3"></p><p><img src="/2021/04/12/something/4.jpg" alt="4"></p><p><img src="/2021/04/12/something/5.jpg" alt="5"></p><p><img src="/2021/04/12/something/6.jpg" alt="6"></p><p><img src="/2021/04/12/something/7.jpg" alt="7"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;世界那么大，&lt;br&gt;会不会有另外一个我，&lt;br&gt;过着自己喜欢的生活。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2021/04/12/something/1.jpg&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2021/04/12/something/2.jpg&quot; a</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>ActiveMQ消息中间件笔记</title>
