@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.xc234.ltd/2021/11/01/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BF%85%E5%A4%87%E6%93%8D%E4%BD%9C/</loc>
+    
+    <lastmod>2021-11-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.xc234.ltd/2021/04/12/something/</loc>
     
     <lastmod>2021-04-12</lastmod>
@@ -88,7 +95,7 @@
 
   <url>
     <loc>http://www.xc234.ltd/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -96,77 +103,77 @@
   
   <url>
     <loc>http://www.xc234.ltd/tags/MQ/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.xc234.ltd/tags/SpringBoot/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.xc234.ltd/tags/MySql/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.xc234.ltd/tags/%E7%B4%A2%E5%BC%95/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.xc234.ltd/tags/%E8%89%BA%E6%9C%AF%E5%AE%B6/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.xc234.ltd/tags/java%E5%90%8E%E7%AB%AF/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.xc234.ltd/tags/test/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.xc234.ltd/tags/%E6%9C%AC%E5%9C%B0/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.xc234.ltd/tags/%E5%9B%BE%E7%89%87/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.xc234.ltd/tags/Redis/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.xc234.ltd/tags/SpringCloud/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -175,7 +182,7 @@
   
   <url>
     <loc>http://www.xc234.ltd/categories/%E8%89%BA%E6%9C%AF/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

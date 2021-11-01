@@ -6,7 +6,7 @@
   <link href="http://www.xc234.ltd/atom.xml" rel="self"/>
   
   <link href="http://www.xc234.ltd/"/>
-  <updated>2021-04-12T11:56:17.574Z</updated>
+  <updated>2021-11-01T13:32:15.914Z</updated>
   <id>http://www.xc234.ltd/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux服务器必备操作</title>
+    <link href="http://www.xc234.ltd/2021/11/01/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BF%85%E5%A4%87%E6%93%8D%E4%BD%9C/"/>
+    <id>http://www.xc234.ltd/2021/11/01/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BF%85%E5%A4%87%E6%93%8D%E4%BD%9C/</id>
+    <published>2021-11-01T13:30:03.000Z</published>
+    <updated>2021-11-01T13:32:15.914Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一次安装linux服务器"><a href="#第一次安装linux服务器" class="headerlink" title="第一次安装linux服务器"></a>第一次安装linux服务器</h1><h2 id="一、可以先安装宝塔面板"><a href="#一、可以先安装宝塔面板" class="headerlink" title="一、可以先安装宝塔面板"></a>一、可以先安装宝塔面板</h2><p><a href="https://www.bt.cn/bbs/thread-19376-1-1.html">安装教程</a></p><h2 id="二、安装JDK1-8"><a href="#二、安装JDK1-8" class="headerlink" title="二、安装JDK1.8"></a>二、安装JDK1.8</h2><p><a href="https://blog.csdn.net/qq_34584694/article/details/105013960">安装教程</a></p><h2 id="三、安装数据库（mysql）"><a href="#三、安装数据库（mysql）" class="headerlink" title="三、安装数据库（mysql）"></a>三、安装数据库（mysql）</h2><p>可以安装用宝塔安装mysql</p><h3 id="远程访问数据库注意"><a href="#远程访问数据库注意" class="headerlink" title="远程访问数据库注意"></a>远程访问数据库注意</h3><p>如果需要远程访问服务器上的服务器时，需要在安全组上开放相应的端口，然后同样需要在宝塔安全页面放行相应的端口才能访问</p><h2 id="四、依次运行以下命令添加yum源"><a href="#四、依次运行以下命令添加yum源" class="headerlink" title="四、依次运行以下命令添加yum源"></a>四、依次运行以下命令添加yum源</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum update</span><br><span class="line">yum install epel-release -y</span><br><span class="line">yum clean all</span><br><span class="line">yum list</span><br></pre></td></tr></table></figure><h2 id="五、安装需要的软件"><a href="#五、安装需要的软件" class="headerlink" title="五、安装需要的软件"></a>五、安装需要的软件</h2><h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><h4 id="安装并运行Docker"><a href="#安装并运行Docker" class="headerlink" title="安装并运行Docker"></a>安装并运行Docker</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum install docker-io -y</span><br><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure><h4 id="检查安装结果"><a href="#检查安装结果" class="headerlink" title="检查安装结果"></a>检查安装结果</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker info</span><br></pre></td></tr></table></figure><h4 id="启动使用Docker"><a href="#启动使用Docker" class="headerlink" title="启动使用Docker"></a>启动使用Docker</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker     #运行Docker守护进程</span><br><span class="line">systemctl stop docker      #停止Docker守护进程</span><br><span class="line">systemctl restart docker   #重启Docker守护进程</span><br></pre></td></tr></table></figure><h4 id="修改docker镜像仓库"><a href="#修改docker镜像仓库" class="headerlink" title="修改docker镜像仓库"></a>修改docker镜像仓库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">vim &#x2F;etc&#x2F;docker&#x2F;daemon.json</span><br><span class="line">#改为下面内容，然后重启docker</span><br><span class="line">&#123;</span><br><span class="line">&quot;debug&quot;:true,&quot;experimental&quot;:true,</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https:&#x2F;&#x2F;pb5bklzr.mirror.aliyuncs.com&quot;,&quot;https:&#x2F;&#x2F;hub-mirror.c.163.com&quot;,&quot;https:&#x2F;&#x2F;docker.mirrors.ustc.edu.cn&quot;]</span><br><span class="line">&#125;</span><br><span class="line">#大括号不用复制</span><br><span class="line"></span><br><span class="line">#查看信息</span><br><span class="line">docker info</span><br></pre></td></tr></table></figure><p><img src="/2021/11/01/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BF%85%E5%A4%87%E6%93%8D%E4%BD%9C/01.png" alt="01"></p><p>然后重新启动docker(systemctl restart docker)，查看信息(docker info)</p><p><img src="/2021/11/01/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BF%85%E5%A4%87%E6%93%8D%E4%BD%9C/02.png" alt="02"></p><h3 id="docker部署redis"><a href="#docker部署redis" class="headerlink" title="docker部署redis"></a>docker部署redis</h3><ul><li>如果访问不了，记得看防火墙/网络安全组端口是否开放</li><li>源码安装redis的话默认不能远程访问</li><li>docker安装redis可以远程访问</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">docker run -itd --name mall-redis(名称) -p 8000:6379(映射服务器端口：容器端口) redis --requirepass 123456（设置密码）</span></span><br><span class="line"></span><br><span class="line">docker run -itd --name startmall-redis -p 8000:6379 redis --requirepass 123456</span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="记得去安全组开放相应端口"><a href="#记得去安全组开放相应端口" class="headerlink" title="记得去安全组开放相应端口"></a>记得去安全组开放相应端口</h4>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;第一次安装linux服务器&quot;&gt;&lt;a href=&quot;#第一次安装linux服务器&quot; class=&quot;headerlink&quot; title=&quot;第一次安装linux服务器&quot;&gt;&lt;/a&gt;第一次安装linux服务器&lt;/h1&gt;&lt;h2 id=&quot;一、可以先安装宝塔面板&quot;&gt;&lt;a href=</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>something</title>
